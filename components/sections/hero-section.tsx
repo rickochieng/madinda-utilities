@@ -1,7 +1,7 @@
 "use client";
 
+import Hero3D from "@/components/3d/Hero3D";
 import Link from "next/link";
-import SmartEcosystem from "@/components/home/smart-ecosystem";
 
 export default function HeroSection() {
   return (
@@ -47,7 +47,7 @@ export default function HeroSection() {
 
               <Link
                 href="/pilot-project"
-                aria-label="Request Pilot Project"  
+                aria-label="Request Pilot Project"
                 className="px-8 py-4 rounded-xl border border-white/20 hover:border-white/40 transition"
               >
                 Request Pilot Project
@@ -59,7 +59,7 @@ export default function HeroSection() {
 
           {/* RIGHT COLUMN */}
           <div className="relative">
-            <SmartEcosystem />
+            <Hero3D />
           </div>
 
         </div>
