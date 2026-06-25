@@ -1,0 +1,134 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+model Organization {
+  id          String   @id @default(cuid())
+  name        String
+  industry    String
+  country     String
+
+  createdAt   DateTime @default(now())
+
+  meters      Meter[]
+  customers   Customer[]
+  alerts      Alert[]
+}
+
+model Customer {
+  id            String   @id @default(cuid())
+
+  firstName     String
+  lastName      String
+  email         String
+
+  accountNumber String   @unique
+
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id])
+
+  meters        Meter[]
+
+  createdAt     DateTime @default(now())
+}
+
+model Meter {
+  id            String   @id @default(cuid())
+
+  serialNumber  String   @unique
+
+  type          MeterType
+
+  status        MeterStatus
+
+  location      String
+
+  customerId    String?
+  customer      Customer? @relation(fields: [customerId], references: [id])
+
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id])
+
+  readings      ConsumptionReading[]
+
+  createdAt     DateTime @default(now())
+}
+
+model ConsumptionReading {
+  id          String   @id @default(cuid())
+
+  meterId     String
+  meter       Meter @relation(fields: [meterId], references: [id])
+
+  value       Float
+
+  recordedAt  DateTime @default(now())
+}
+
+model Alert {
+  id             String   @id @default(cuid())
+
+  type           AlertType
+
+  severity       Severity
+
+  message        String
+
+  acknowledged   Boolean @default(false)
+
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id])
+
+  createdAt      DateTime @default(now())
+}
+
+model PilotProjectApplication {
+  id                String   @id @default(cuid())
+
+  organization      String
+  contactName       String
+  email             String
+  phone             String
+  country           String
+
+  industry          String
+
+  utilityType       String
+
+  numberOfMeters    Int
+
+  description       String
+
+  expectedOutcome   String
+
+  status            String @default("Pending")
+
+  submittedAt       DateTime @default(now())
+}
+
+enum MeterType {
+  WATER
+  ELECTRICITY
+}
+
+enum MeterStatus {
+  ONLINE
+  OFFLINE
+  WARNING
+}
+
+enum AlertType {
+  LEAK
+  TAMPER
+  GRID
+}
+
+enum Severity {
+  LOW
+  MEDIUM
+  HIGH
+}

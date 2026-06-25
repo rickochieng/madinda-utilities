@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #0b1220;
+  color: white;
+  min-height: 100vh;
+}
+
+.card {
+  background: #111b2e;
+  border-radius: 1rem;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.section {
+  padding: 5rem 1.5rem;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+
+  background-size: 50px 50px;
+}
+
+.glow-bg {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: rgba(0, 153, 230, 0.15);
+  filter: blur(120px);
+  border-radius: 9999px;
+}
+
+.network-bg {
+  background-image:
+    radial-gradient(circle at center,
+      rgba(0,153,230,0.15),
+      transparent 70%);
+}
