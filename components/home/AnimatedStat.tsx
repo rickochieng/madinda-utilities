@@ -2,40 +2,36 @@
 
 import CountUp from "react-countup";
 
-interface Props{
-    end:number;
-    suffix?:string;
-    title:string;
-    color:string;
+interface Props {
+  end: number;
+  suffix?: string;
+  title: string;
+  color: string;
+  decimals?: number;
 }
 
 export default function AnimatedStat({
-    end,
-    suffix="",
-    title,
-    color,
-}:Props){
+  end,
+  suffix = "",
+  title,
+  color,
+  decimals = 0,
+}: Props) {
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <h2 className={`text-4xl font-black ${color}`}>
+        <CountUp
+          end={end}
+          decimals={decimals}
+          duration={2.8}
+          separator=","
+        />
+        {suffix}
+      </h2>
 
-    return(
-
-        <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6">
-
-            <h2
-                className={`text-4xl font-black ${color}`}
-            >
-                <CountUp
-                    end={end}
-                    duration={2.8}
-                />
-                {suffix}
-            </h2>
-
-            <p className="mt-2 text-slate-500">
-                {title}
-            </p>
-
-        </div>
-
-    );
-
+      <p className="mt-2 text-slate-600 font-medium">
+        {title}
+      </p>
+    </div>
+  );
 }

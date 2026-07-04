@@ -71,7 +71,7 @@ export default function HeroSection() {
                 title="Smart Meters"
                 end={1.2}
                 suffix="M+"
-                decimals={1}
+                
 
 color="text-blue-600"
               />
