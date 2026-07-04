@@ -5,7 +5,7 @@ export default function SupportPage() {
         Support
       </h1>
 
-      <p className="text-white/70 max-w-4xl">
+      <p className="text-slate-900/70 max-w-4xl">
         Get assistance with smart meters, AMI deployments,
         utility management systems, and technical support requests.
       </p>

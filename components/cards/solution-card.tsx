@@ -16,7 +16,7 @@ export default function SolutionCard({
         <h3 className="font-semibold text-lg">{title}</h3>
       </div>
 
-      <p className="text-white/60 text-sm mt-3">{description}</p>
+      <p className="text-slate-500 text-sm mt-3">{description}</p>
     </div>
   );
 }

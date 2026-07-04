@@ -10,7 +10,7 @@ export default function SmartCitySection() {
             Building Africa's Future Smart Cities
           </h2>
 
-          <p className="text-white/70 text-lg">
+          <p className="text-slate-900/70 text-lg">
             Madinda Utilities delivers the digital infrastructure
             required to support modern municipalities,
             utility operators, industrial zones,

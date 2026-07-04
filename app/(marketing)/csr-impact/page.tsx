@@ -5,7 +5,7 @@ export default function CSRImpactPage() {
         CSR & Impact
       </h1>
 
-      <p className="text-white/70 max-w-4xl">
+      <p className="text-slate-900/70 max-w-4xl">
         Madinda Utilities is committed to sustainable development,
         community empowerment, water conservation, energy efficiency,
         and the advancement of smart infrastructure across Africa.

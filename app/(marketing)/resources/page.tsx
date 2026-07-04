@@ -5,7 +5,7 @@ export default function ResourcesPage() {
         Resources
       </h1>
 
-      <p className="text-white/70 max-w-4xl">
+      <p className="text-slate-900/70 max-w-4xl">
         Access whitepapers, technical documentation, case studies,
         implementation guides, and smart utility insights.
       </p>

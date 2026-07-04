@@ -13,11 +13,11 @@ export default function IndustryCard({
     <div className="card p-6">
       <h3 className="text-lg font-semibold">{name}</h3>
 
-      <p className="text-white/60 text-sm mt-2">
+      <p className="text-slate-500 text-sm mt-2">
         {painPoint}
       </p>
 
-      <div className="mt-4 text-green-400 text-sm font-medium">
+      <div className="mt-4 text-emerald-600 text-sm font-medium">
         ROI: {roi}
       </div>
     </div>

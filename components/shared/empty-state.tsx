@@ -9,7 +9,7 @@ export default function EmptyState({
     <div className="card p-10 text-center">
       <h3 className="text-lg font-semibold">{title}</h3>
       {description && (
-        <p className="text-white/50 text-sm mt-2">
+        <p className="text-slate-900/50 text-sm mt-2">
           {description}
         </p>
       )}

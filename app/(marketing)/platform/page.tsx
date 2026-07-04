@@ -5,7 +5,7 @@ export default function PlatformPage() {
         Utility Management Platform
       </h1>
 
-      <p className="text-white/70 max-w-4xl">
+      <p className="text-slate-900/70 max-w-4xl">
         The Madinda Utilities Platform provides a centralized command center
         for monitoring smart water and electricity infrastructure, revenue
         protection, analytics, billing integrations, and utility operations.

@@ -8,7 +8,7 @@ export default function PilotProjectPage() {
         Pilot Project Application
       </h1>
 
-      <p className="text-white/60 max-w-2xl">
+      <p className="text-slate-500 max-w-2xl">
         Deploy Madinda smart utility infrastructure in your network.
         Test revenue recovery, leak detection, and AMI systems.
       </p>

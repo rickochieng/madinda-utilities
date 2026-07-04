@@ -19,7 +19,7 @@ export default function DashboardDemo() {
         <div className="card p-6">
           <h3 className="font-semibold mb-4">System Alerts</h3>
 
-          <div className="space-y-2 text-sm text-white/70">
+          <div className="space-y-2 text-sm text-slate-900/70">
             <p>⚠ Leak detected - Zone A12</p>
             <p>⚠ Tamper alert - Meter #8821</p>
             <p>⚠ Grid instability - Sector 4</p>

@@ -34,7 +34,7 @@ export default function TrustMetricsSection() {
                 {item.value}
               </div>
 
-              <p className="mt-3 text-white/70">
+              <p className="mt-3 text-slate-900/70">
                 {item.label}
               </p>
             </div>

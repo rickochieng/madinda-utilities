@@ -5,7 +5,7 @@ export default function MediaNewsPage() {
         Media & News
       </h1>
 
-      <p className="text-white/70 max-w-4xl">
+      <p className="text-slate-900/70 max-w-4xl">
         Stay informed about Madinda Utilities projects,
         smart utility innovations, industry developments,
         and company announcements.

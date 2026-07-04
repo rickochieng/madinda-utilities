@@ -11,7 +11,7 @@ export default function Footer() {
               Madinda Utilities
             </h3>
 
-            <p className="text-white/60">
+            <p className="text-slate-500">
               Smart Utility Infrastructure Built for Africa
             </p>
           </div>
@@ -21,7 +21,7 @@ export default function Footer() {
               Solutions
             </h4>
 
-            <ul className="space-y-2 text-white/60">
+            <ul className="space-y-2 text-slate-500">
               <li>Smart Metering</li>
               <li>AMI</li>
               <li>Revenue Protection</li>
@@ -34,7 +34,7 @@ export default function Footer() {
               Company
             </h4>
 
-            <ul className="space-y-2 text-white/60">
+            <ul className="space-y-2 text-slate-500">
               <li>About</li>
               <li>Careers</li>
               <li>CSR</li>
@@ -46,7 +46,7 @@ export default function Footer() {
               Contact
             </h4>
 
-            <ul className="space-y-2 text-white/60">
+            <ul className="space-y-2 text-slate-500">
               <li>+27 83 744 2913</li>
               <li>Pretoria, South Africa</li>
             </ul>

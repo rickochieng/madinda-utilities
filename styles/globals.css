@@ -2,43 +2,415 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ------------------------------------------------ */
+/* ROOT */
+/* ------------------------------------------------ */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #0b1220;
-  color: white;
-  min-height: 100vh;
+
+  background:#ffffff;
+
+  color:#1f2937;
+
+  min-height:100vh;
+
+  overflow-x:hidden;
+
+  font-feature-settings:"rlig" 1,"calt" 1;
+
 }
 
-.card {
-  background: #111b2e;
-  border-radius: 1rem;
-  border: 1px solid rgba(255,255,255,0.05);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+/* ------------------------------------------------ */
+/* HERO BACKGROUND */
+/* ------------------------------------------------ */
+
+.hero-background{
+
+  position:absolute;
+
+  inset:0;
+
+  overflow:hidden;
+
 }
 
-.section {
-  padding: 5rem 1.5rem;
-}
+/* ------------------------------------------------ */
+/* GRID */
+/* ------------------------------------------------ */
 
-.hero-grid {
+.hero-grid{
+
+  position:relative;
+
   background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
 
-  background-size: 50px 50px;
+    linear-gradient(
+      rgba(15,23,42,.05) 1px,
+      transparent 1px
+    ),
+
+    linear-gradient(
+      90deg,
+      rgba(15,23,42,.05) 1px,
+      transparent 1px
+    );
+
+  background-size:70px 70px;
+
 }
 
-.glow-bg {
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  background: rgba(0, 153, 230, 0.15);
-  filter: blur(120px);
-  border-radius: 9999px;
+/* ------------------------------------------------ */
+/* NETWORK */
+/* ------------------------------------------------ */
+
+.network-bg{
+
+  background:
+
+  radial-gradient(
+
+    circle at center,
+
+    rgba(59,130,246,.10),
+
+    transparent 70%
+
+  );
+
 }
 
-.network-bg {
-  background-image:
-    radial-gradient(circle at center,
-      rgba(0,153,230,0.15),
-      transparent 70%);
+/* ------------------------------------------------ */
+/* GLOW */
+/* ------------------------------------------------ */
+
+.glow-bg{
+
+  position:absolute;
+
+  width:700px;
+
+  height:700px;
+
+  border-radius:9999px;
+
+  background:
+
+  radial-gradient(
+
+    circle,
+
+    rgba(59,130,246,.20),
+
+    rgba(59,130,246,.08),
+
+    transparent 70%
+
+  );
+
+  filter:blur(140px);
+
+  animation:
+
+  glowFloat
+
+  12s
+
+  ease-in-out
+
+  infinite;
+
+}
+
+@keyframes glowFloat{
+
+0%{
+transform:translate(0,0);
+}
+
+50%{
+transform:translate(20px,-30px);
+}
+
+100%{
+transform:translate(0,0);
+}
+
+}
+
+/* ------------------------------------------------ */
+/* CARDS */
+/* ------------------------------------------------ */
+
+.card{
+
+  background:#ffffff;
+
+  border-radius:24px;
+
+  border:1px solid #e5e7eb;
+
+  box-shadow:
+
+    0 12px 40px rgba(15,23,42,.08);
+
+}
+
+/* ------------------------------------------------ */
+/* SECTION */
+/* ------------------------------------------------ */
+
+.section{
+
+  position:relative;
+
+  padding:6rem 1.5rem;
+
+  background:#ffffff;
+
+}
+
+/* ------------------------------------------------ */
+/* GLASS */
+/* ------------------------------------------------ */
+
+.glass{
+
+  backdrop-filter:blur(18px);
+
+  background:rgba(255,255,255,.70);
+
+  border:1px solid rgba(148,163,184,.20);
+
+}
+
+/* ------------------------------------------------ */
+/* SECTION DIVIDER */
+/* ------------------------------------------------ */
+
+.section-divider{
+
+  height:160px;
+
+  background:
+
+  linear-gradient(
+
+    to bottom,
+
+    transparent,
+
+    rgba(248,250,252,.8),
+
+    #ffffff
+
+  );
+
+}
+
+/* ------------------------------------------------ */
+/* KEN BURNS */
+/* ------------------------------------------------ */
+
+@keyframes kenburns{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+.animate-\[kenburns_12s_ease-in-out_infinite\]{
+
+animation:
+
+kenburns
+
+12s
+
+ease-in-out
+
+infinite;
+
+}
+
+/* ------------------------------------------------ */
+/* PROGRESS */
+/* ------------------------------------------------ */
+
+@keyframes progress{
+
+0%{
+width:0%;
+}
+
+100%{
+width:100%;
+}
+
+}
+
+.animate-\[progress_5s_linear_infinite\]{
+
+animation:
+
+progress
+
+5s
+
+linear
+
+infinite;
+
+}
+
+/* ------------------------------------------------ */
+/* FLOAT */
+/* ------------------------------------------------ */
+
+@keyframes floating{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+.float{
+
+animation:
+
+floating
+
+6s
+
+ease-in-out
+
+infinite;
+
+}
+
+/* ------------------------------------------------ */
+/* FADE IN */
+/* ------------------------------------------------ */
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.fade-up{
+
+animation:
+
+fadeUp
+
+1s
+
+ease-out
+
+both;
+
+}
+
+/* ------------------------------------------------ */
+/* SCROLLBAR */
+/* ------------------------------------------------ */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#f8fafc;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#2563eb;
+
+border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#1d4ed8;
+
+}
+
+/* ------------------------------------------------ */
+/* TEXT SELECTION */
+/* ------------------------------------------------ */
+
+::selection{
+
+background:#2563eb;
+
+color:#ffffff;
+
+}
+
+/* ------------------------------------------------ */
+/* GLOW CARD */
+/* ------------------------------------------------ */
+
+@keyframes borderGlow{
+
+0%{
+box-shadow:0 0 0 rgba(37,99,235,.10);
+}
+
+50%{
+box-shadow:0 0 30px rgba(37,99,235,.20);
+}
+
+100%{
+box-shadow:0 0 0 rgba(37,99,235,.10);
+}
+
+}
+
+.glow-card{
+
+animation:borderGlow 4s ease-in-out infinite;
+
 }

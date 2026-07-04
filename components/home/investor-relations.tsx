@@ -8,7 +8,7 @@ export default function InvestorRelations() {
           Infrastructure Investment Opportunity
         </h2>
 
-        <p className="text-white/70 text-lg">
+        <p className="text-slate-900/70 text-lg">
           Madinda Utilities is building the next generation
           of African utility infrastructure through smart metering,
           revenue protection, grid modernization and analytics.
