@@ -2,9 +2,14 @@ export default function AboutPage() {
   return (
     <main className="section space-y-10">
 
-      <h1 className="text-4xl font-bold">About Madinda Utilities</h1>
+      <h1 className="text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-bold">About Madinda Utilities</h1>
 
-      <p className="text-slate-500 max-w-3xl">
+      <p className="text-slate-500 max-w-lg md:max-w-xl lg:max-w-3xl">
         Madinda Utilities (Pty) Ltd is a smart utility technology company
         specializing in Advanced Metering Infrastructure (AMI),
         revenue protection systems, and AI-powered utility analytics

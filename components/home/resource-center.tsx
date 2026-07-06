@@ -55,7 +55,7 @@ export default function ResourceCenter() {
             Insights, Guides & Technical Resources
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-600">
+          <p className="mx-auto mt-6 max-w-lg md:max-w-xl lg:max-w-3xl text-lg text-slate-600">
             Access industry-leading publications, deployment guides,
             whitepapers and technical documentation designed for utility
             providers, municipalities and smart city projects.

@@ -4,7 +4,12 @@ export default function GovernmentReadiness() {
 
       <div className="card p-12">
 
-        <h2 className="text-4xl font-bold mb-6">
+        <h2 className="text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-bold mb-6">
           Enterprise & Government Ready
         </h2>
 

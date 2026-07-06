@@ -43,7 +43,7 @@ export default function ExecutiveKPIs() {
             Trusted by Modern Utilities
           </h2>
 
-          <p className="mt-5 text-lg text-slate-600 max-w-3xl mx-auto">
+          <p className="mt-5 text-lg text-slate-600 max-w-lg md:max-w-xl lg:max-w-3xl mx-auto">
             Delivering reliable smart metering, utility analytics, revenue
             protection and infrastructure management across Africa.
           </p>

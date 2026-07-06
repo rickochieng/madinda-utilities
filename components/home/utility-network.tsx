@@ -15,7 +15,12 @@ export default function UtilityNetwork() {
   return (
     <section className="section network-bg">
 
-      <h2 className="text-4xl font-bold mb-10">
+      <h2 className="text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-bold mb-10">
         Connected Utility Ecosystem
       </h2>
 

@@ -78,7 +78,7 @@ export default function SolutionsOverviewSection() {
             Complete Utility Technology Suite
           </h2>
 
-          <p className="mx-auto mt-5 max-w-3xl text-lg text-slate-600">
+          <p className="mx-auto mt-5 max-w-lg md:max-w-xl lg:max-w-3xl text-lg text-slate-600">
             From smart metering and AI analytics to revenue protection,
             Madinda Utilities delivers end-to-end digital infrastructure
             for modern utility providers.

@@ -26,7 +26,7 @@ export default function ExecutiveDashboardPreview() {
               Utility Operations Dashboard
             </h2>
 
-            <p className="mt-5 max-w-3xl text-lg text-slate-600">
+            <p className="mt-5 max-w-lg md:max-w-xl lg:max-w-3xl text-lg text-slate-600">
               Monitor electricity and water infrastructure, detect faults,
               analyze consumption trends, and protect revenue through one
               intelligent platform.

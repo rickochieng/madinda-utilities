@@ -14,31 +14,36 @@ import "swiper/css/pagination";
 
 const slides = [
   {
-    image: "/images/smart-meter-1.png",
+    desktopImage: "/images/smart-meter-1-desktop.png",
+    mobileImage: "/images/smart-meter-1-mobile.png",
     title: "Smart Metering Intelligence",
     subtitle:
       "AI-powered Advanced Metering Infrastructure for modern utilities.",
   },
   {
-    image: "/images/smart-water-meter.png",
+    desktopImage: "/images/smart-water-meter-desktop.png",
+    mobileImage: "/images/smart-water-meter-mobile.png",
     title: "Smart Water Management",
     subtitle:
       "Real-time monitoring, leak detection and water distribution analytics.",
   },
   {
-    image: "/images/control-room.png",
+    desktopImage: "/images/control-room-desktop.png",
+    mobileImage: "/images/control-room-mobile.png",
     title: "Utility Command Center",
     subtitle:
       "A unified platform for monitoring electricity and water infrastructure.",
   },
   {
-    image: "/images/transmission-grid.jpg",
+    desktopImage: "/images/transmission-grid-desktop.jpg",
+    mobileImage: "/images/transmission-grid-mobile.png",
     title: "Smart Grid Modernization",
     subtitle:
       "Building resilient energy infrastructure through digital transformation.",
   },
   {
-    image: "/images/utility-analytics.jpg",
+    desktopImage: "/images/utility-analytics-desktop.jpg",
+    mobileImage: "/images/utility-analytics-mobile.png",
     title: "AI Utility Analytics",
     subtitle:
       "Actionable insights for revenue protection and operational excellence.",
@@ -47,7 +52,7 @@ const slides = [
 
 export default function IntroCarousel() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-[90svh] min-h-[650px] md:h-[100svh] w-full overflow-hidden">
 
       {/* Shared animated background */}
       <HeroBackground />
@@ -67,21 +72,57 @@ export default function IntroCarousel() {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.title}>
-            <div className="relative h-screen">
+            <div className="relative h-full">
 
               {/* Background Image */}
 
-              <Image
-                src={slide.image}
-                alt={slide.title}
-                fill
-                priority
-                className="object-cover scale-100"
-              />
+              {/* Desktop Image */}
+<Image
+  src={slide.desktopImage}
+  alt={slide.title}
+  fill
+  priority
+
+  sizes="(max-width: 767px) 0vw, 100vw"
+  className="
+    hidden
+    md:block
+    object-cover
+    object-center
+    transition-transform
+    duration-700
+  "
+/>
+
+{/* Mobile Image */}
+<Image
+  src={slide.mobileImage}
+  alt={slide.title}
+  fill
+  priority
+  sizes="100vw"
+  className="
+    block
+    md:hidden
+    object-cover
+    object-center
+    transition-transform
+    duration-700
+  "
+/>
 
               {/* Dark Overlay */}
 
-              <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-transparent to-transparent" />
+              <div className=" absolute
+    inset-0
+    bg-gradient-to-b
+    from-white/85
+    via-white/40
+    to-transparent
+    md:bg-gradient-to-r
+    md:from-white/80
+    md:via-transparent
+    md:to-transparent" />
 
               {/* Blur Overlay */}
 
@@ -89,12 +130,12 @@ export default function IntroCarousel() {
 
               {/* Content */}
 
-              <div className="absolute inset-0 flex items-center">
+              <div className="absolute inset-0 flex items-center pt-32 md:pt-0">
 
                 <div className="container mx-auto max-w-7xl px-8">
 
                   <motion.div
-                    className="max-w-3xl"
+                    className="max-w-lg md:max-w-xl lg:max-w-3xl"
                     initial={{
                       opacity: 0,
                       y: 60,
@@ -110,57 +151,75 @@ export default function IntroCarousel() {
                   >
 
 
-                    <h1 className="text-5xl lg:text-7xl font-extrabold leading-tight text-slate-900">
-                      {slide.title}
-                    </h1>
+                    <h1
+  className="
+    text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900
+  "
+>
+  {slide.title}
+</h1>
 
-                    <p className="mt-8 max-w-2xl text-xl leading-relaxed text-slate-600">
+                    <p className="mt-6
+max-w-xl
+text-lg
+sm:text-xl
+leading-relaxed
+text-slate-700">
                       {slide.subtitle}
                     </p>
 
-                    {/* Statistics */}
+                 {/* Statistics */}
 
-                    <div className="mt-12 grid max-w-xl grid-cols-3 gap-8">
+<div className="mt-10 flex flex-wrap justify-start gap-8 md:gap-12">
 
-                      <div>
-                        <p className="text-4xl font-black text-blue-600">
-                          1.2M+
-                        </p>
+  <div className="min-w-[110px] text-center">
+    <p className="text-3xl sm:text-4xl lg:text-5xl font-black text-blue-600 whitespace-nowrap">
+      1.2M+
+    </p>
 
-                        <p className="mt-2 text-slate-500">
-                          Smart Meters
-                        </p>
-                      </div>
+    <p className="mt-2 text-sm sm:text-base text-slate-600">
+      Smart Meters
+    </p>
+  </div>
 
-                      <div>
-                        <p className="text-4xl font-black text-emerald-600">
-                          99.98%
-                        </p>
+  <div className="min-w-[110px] text-center">
+    <p className="text-3xl sm:text-4xl lg:text-5xl font-black text-emerald-600 whitespace-nowrap">
+      99.98%
+    </p>
 
-                        <p className="mt-2 text-slate-500">
-                          Availability
-                        </p>
-                      </div>
+    <p className="mt-2 text-sm sm:text-base text-slate-600">
+      Availability
+    </p>
+  </div>
 
-                      <div>
-                        <p className="text-4xl font-black text-orange-500">
-                          48
-                        </p>
+  <div className="min-w-[110px] text-center">
+    <p className="text-3xl sm:text-4xl lg:text-5xl font-black text-orange-500 whitespace-nowrap">
+      48
+    </p>
 
-                        <p className="mt-2 text-slate-500">
-                          Projects
-                        </p>
-                      </div>
+    <p className="mt-2 text-sm sm:text-base text-slate-600">
+      Projects
+    </p>
+  </div>
 
-                    </div>
+</div>
 
                     {/* Buttons */}
 
-                    <div className="mt-12 flex flex-wrap gap-5">
+                    <div className="mt-10
+flex
+flex-col
+sm:flex-row
+gap-4">
 
                       <Link
                         href="/contact"
-                        className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-slate-900 shadow-lg transition hover:bg-blue-700 hover:shadow-xl"
+                        className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg hover:bg-blue-700 transition"
                       >
                         Request Demo
                       </Link>
@@ -176,7 +235,7 @@ export default function IntroCarousel() {
 
                     {/* Progress Bar */}
 
-                    <div className="mt-16 w-full max-w-md">
+                    <div className="hidden md:block mt-16 w-full max-w-md">
 
                       <div className="h-[3px] overflow-hidden rounded-full bg-white/20">
 

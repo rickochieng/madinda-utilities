@@ -46,7 +46,7 @@ export default function NewsPreview() {
             Industry News & Insights
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-600">
+          <p className="mx-auto mt-6 max-w-lg md:max-w-xl lg:max-w-3xl text-lg text-slate-600">
             Stay informed with the latest developments in smart metering,
             utility infrastructure, digital transformation and smart city
             technologies across Africa.

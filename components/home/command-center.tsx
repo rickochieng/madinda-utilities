@@ -7,7 +7,12 @@ export default function CommandCenter() {
 
       <div className="card p-10">
 
-        <h2 className="text-4xl font-bold mb-8">
+        <h2 className="text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-bold mb-8">
           Utility Command Center
         </h2>
 

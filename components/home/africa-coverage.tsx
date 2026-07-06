@@ -35,7 +35,7 @@ export default function AfricaCoverage() {
             Building Africa's Smart Utility Future
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-600">
+          <p className="mx-auto mt-6 max-w-lg md:max-w-xl lg:max-w-3xl text-lg text-slate-600">
             Madinda Utilities is expanding across Africa, partnering with
             municipalities, utility providers, water authorities and smart
             city initiatives to deliver intelligent infrastructure.
@@ -51,7 +51,12 @@ export default function AfricaCoverage() {
 
             <Globe className="mx-auto mb-4 text-blue-600" size={34} />
 
-            <h3 className="text-4xl font-bold text-slate-900">
+            <h3 className="text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-bold text-slate-900">
               8+
             </h3>
 
@@ -65,7 +70,12 @@ export default function AfricaCoverage() {
 
             <Building2 className="mx-auto mb-4 text-emerald-600" size={34} />
 
-            <h3 className="text-4xl font-bold text-slate-900">
+            <h3 className="text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-bold text-slate-900">
               100+
             </h3>
 
@@ -79,7 +89,12 @@ export default function AfricaCoverage() {
 
             <TrendingUp className="mx-auto mb-4 text-orange-500" size={34} />
 
-            <h3 className="text-4xl font-bold text-slate-900">
+            <h3 className="text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-bold text-slate-900">
               1.2M+
             </h3>
 
@@ -93,7 +108,12 @@ export default function AfricaCoverage() {
 
             <MapPinned className="mx-auto mb-4 text-cyan-600" size={34} />
 
-            <h3 className="text-4xl font-bold text-slate-900">
+            <h3 className="text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-bold text-slate-900">
               SADC
             </h3>
 

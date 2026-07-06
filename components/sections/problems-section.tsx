@@ -14,7 +14,12 @@ export default function ProblemsSection() {
 
       <div className="container mx-auto px-6">
 
-        <h2 className="text-4xl font-bold mb-12">
+        <h2 className="text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-bold mb-12">
           Problems We Solve
         </h2>
 

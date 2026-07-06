@@ -19,7 +19,12 @@ export default function AnimatedStat({
 }: Props) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-      <h2 className={`text-4xl font-black ${color}`}>
+      <h2 className={`text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-black ${color}`}>
         <CountUp
           end={end}
           decimals={decimals}

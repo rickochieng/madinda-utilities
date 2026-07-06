@@ -45,11 +45,15 @@ export default function HeroSection() {
 
             {/* Buttons */}
 
-            <div className="mt-12 flex flex-wrap gap-5">
+            <div className="mt-10
+flex
+flex-col
+sm:flex-row
+gap-4">
 
               <Link
                 href="/contact"
-                className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-slate-900 shadow-lg transition hover:bg-blue-700 hover:shadow-xl"
+                className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg hover:bg-blue-700 transition"
               >
                 Request Demo
               </Link>
@@ -118,7 +122,12 @@ color="text-blue-600"
                   Grid Health
                 </p>
 
-                <h2 className="mt-2 text-4xl font-black text-emerald-600">
+                <h2 className="mt-2 text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-black text-emerald-600">
                   99.98%
                 </h2>
 
@@ -138,7 +147,12 @@ color="text-blue-600"
                   Connected Devices
                 </p>
 
-                <h2 className="mt-2 text-4xl font-black text-blue-600">
+                <h2 className="mt-2 text-2xl  text-4xl
+    sm:text-5xl
+    lg:text-7xl
+    font-extrabold
+    leading-tight
+    text-slate-900 font-black text-blue-600">
                   1.2M+
                 </h2>
 
