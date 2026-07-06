@@ -8,7 +8,7 @@ import ActivityFeed from "@/components/home/ActivityFeed";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white py-32">
+    <section className="relative overflow-hidden bg-white py-20 md:py-32">
 
       {/* Background */}
 
@@ -20,13 +20,19 @@ export default function HeroSection() {
 
       <div className="container relative z-10 mx-auto px-6">
 
-        <div className="grid items-center gap-20 lg:grid-cols-2">
+        <div className="grid items-center gap-12 lg:gap-20 lg:grid-cols-2">
 
           {/* LEFT COLUMN */}
 
           <div>
 
-            <h1 className="text-5xl font-black leading-tight text-slate-900 lg:text-6xl">
+            <h1 className="text-4xl
+    sm:text-5xl
+    lg:text-6xl
+    font-black
+    leading-tight
+    tracking-tight
+    text-slate-900">
               Transform Utility Operations With
 
               <span className="mt-3 block text-blue-600">
@@ -34,7 +40,13 @@ export default function HeroSection() {
               </span>
             </h1>
 
-            <p className="mt-8 max-w-2xl text-xl leading-relaxed text-slate-900/70">
+            <p className=" mt-6
+    max-w-xl
+    text-base
+    sm:text-lg
+    lg:text-xl
+    leading-relaxed
+    text-slate-700">
               Empower electricity and water utilities through
               AI-powered Advanced Metering Infrastructure,
               Revenue Protection,
@@ -45,22 +57,40 @@ export default function HeroSection() {
 
             {/* Buttons */}
 
-            <div className="mt-10
-flex
-flex-col
-sm:flex-row
-gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
 
               <Link
                 href="/contact"
-                className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg hover:bg-blue-700 transition"
+                className="w-full
+sm:w-auto
+rounded-xl
+bg-blue-600
+px-8
+py-4
+text-center
+font-semibold
+text-white
+shadow-lg
+transition
+hover:bg-blue-700"
               >
                 Request Demo
               </Link>
 
               <Link
                 href="/pilot-project"
-                className="rounded-xl border border-white/20 px-8 py-4 font-semibold text-slate-900 transition hover:border-cyan-400"
+                className="w-full
+sm:w-auto
+rounded-xl
+border
+border-slate-300
+px-8
+py-4
+text-center
+font-semibold
+text-slate-900
+transition
+hover:border-cyan-400"
               >
                 Pilot Project
               </Link>
@@ -69,7 +99,7 @@ gap-4">
 
             {/* Animated Stats */}
 
-            <div className="mt-16 grid gap-6 md:grid-cols-3">
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-5">
 
               <AnimatedStat
                 title="Smart Meters"
@@ -111,12 +141,17 @@ color="text-blue-600"
                 width={850}
                 height={750}
                 priority
-                className="glow-card rounded-3xl border border-cyan-400/20 shadow-2xl"
+                className="glow-card
+rounded-2xl
+md:rounded-3xl
+border
+border-cyan-400/20
+shadow-2xl"
               />
 
               {/* Grid Health Card */}
 
-              <div className="absolute -left-10 top-12 rounded-3xl border border-cyan-500/20 bg-black/40 p-6 backdrop-blur-2xl shadow-[0_0_40px_rgba(0,194,255,.15)]">
+              <div className="hidden lg:block absolute -left-10 top-12 rounded-3xl border border-cyan-500/20 bg-black/40 p-6 backdrop-blur-2xl shadow-[0_0_40px_rgba(0,194,255,.15)]">
 
                 <p className="text-sm text-slate-900/50">
                   Grid Health
@@ -141,7 +176,7 @@ color="text-blue-600"
 
               {/* Connected Devices Card */}
 
-              <div className="absolute -right-10 bottom-10 rounded-3xl border border-cyan-500/20 bg-black/40 p-6 backdrop-blur-2xl shadow-[0_0_40px_rgba(0,194,255,.15)]">
+              <div className="hidden lg:block absolute -right-10 bottom-10 rounded-3xl border border-cyan-500/20 bg-black/40 p-6 backdrop-blur-2xl shadow-[0_0_40px_rgba(0,194,255,.15)]">
 
                 <p className="text-sm text-slate-900/50">
                   Connected Devices
