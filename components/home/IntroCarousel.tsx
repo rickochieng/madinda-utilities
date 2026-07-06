@@ -83,7 +83,7 @@ export default function IntroCarousel() {
   fill
   priority
 
-  sizes="(max-width: 767px) 0vw, 100vw"
+  sizes="(max-width: 768px) 100vw, 50vw"
   className="
     hidden
     md:block
@@ -100,7 +100,7 @@ export default function IntroCarousel() {
   alt={slide.title}
   fill
   priority
-  sizes="100vw"
+  sizes="(max-width: 768px) 100vw, 50vw"
   className="
     block
     md:hidden
