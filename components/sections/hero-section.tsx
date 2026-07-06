@@ -8,7 +8,7 @@ import ActivityFeed from "@/components/home/ActivityFeed";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white py-20 md:py-32">
+    <section className="relative overflow-hidden bg-white py-10 sm:py-16 lg:py-28">
 
       {/* Background */}
 
@@ -18,7 +18,7 @@ export default function HeroSection() {
 
       <div className="absolute right-0 bottom-0 h-[550px] w-[550px] rounded-full bg-blue-600/10 blur-[180px]" />
 
-      <div className="container relative z-10 mx-auto px-6" />
+      <div className="container relative z-10 mx-auto px-6">
 
         <div className="grid items-center gap-12 lg:gap-20 lg:grid-cols-2">
 
@@ -26,13 +26,15 @@ export default function HeroSection() {
 
           <div>
 
-            <h1 className="text-4xl
-    sm:text-5xl
-    lg:text-6xl
-    font-black
-    leading-tight
-    tracking-tight
-    text-slate-900">
+            <h1 className="text-3xl
+sm:text-4xl
+md:text-5xl
+lg:text-6xl
+font-black
+leading-tight
+tracking-tight
+text-slate-900
+break-words">
               Transform Utility Operations With
 
               <span className="mt-3 block text-blue-600">
@@ -40,13 +42,12 @@ export default function HeroSection() {
               </span>
             </h1>
 
-            <p className=" mt-6
-    max-w-xl
-    text-base
-    sm:text-lg
-    lg:text-xl
-    leading-relaxed
-    text-slate-700">
+            <p className=" mt-5
+max-w-lg
+text-base
+sm:text-lg
+leading-relaxed
+text-slate-700">
               Empower electricity and water utilities through
               AI-powered Advanced Metering Infrastructure,
               Revenue Protection,
@@ -57,7 +58,7 @@ export default function HeroSection() {
 
             {/* Buttons */}
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
 
               <Link
                 href="/contact"
@@ -99,7 +100,7 @@ hover:border-cyan-400"
 
             {/* Animated Stats */}
 
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
 
               <AnimatedStat
                 title="Smart Meters"
@@ -141,7 +142,9 @@ color="text-blue-600"
                 width={850}
                 height={750}
                 priority
-                className="glow-card
+                className="w-full
+h-auto
+glow-card
 rounded-2xl
 md:rounded-3xl
 border
@@ -192,6 +195,7 @@ shadow-2xl"
 
         </div>
 
+      </div>
       </div>
 
     </section>
