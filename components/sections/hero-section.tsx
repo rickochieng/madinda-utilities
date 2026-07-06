@@ -18,7 +18,7 @@ export default function HeroSection() {
 
       <div className="absolute right-0 bottom-0 h-[550px] w-[550px] rounded-full bg-blue-600/10 blur-[180px]" />
 
-      <div className="container relative z-10 mx-auto px-6">
+      <div className="container relative z-10 mx-auto px-6" />
 
         <div className="grid items-center gap-12 lg:gap-20 lg:grid-cols-2">
 
@@ -149,56 +149,41 @@ border-cyan-400/20
 shadow-2xl"
               />
 
-              {/* Grid Health Card */}
+         {/* Grid Health Card */}
 
-              <div className="hidden lg:block absolute -left-10 top-12 rounded-3xl border border-cyan-500/20 bg-black/40 p-6 backdrop-blur-2xl shadow-[0_0_40px_rgba(0,194,255,.15)]">
+<div className="hidden lg:block absolute -left-10 top-12 rounded-3xl border border-cyan-500/20 bg-black/40 p-6 backdrop-blur-2xl shadow-[0_0_40px_rgba(0,194,255,.15)]">
 
-                <p className="text-sm text-slate-900/50">
-                  Grid Health
-                </p>
+  <p className="text-sm text-white/70">
+    Grid Health
+  </p>
 
-                <h2 className="mt-2 text-2xl  text-4xl
-    sm:text-5xl
-    lg:text-7xl
-    font-extrabold
-    leading-tight
-    text-slate-900 font-black text-emerald-600">
-                  99.98%
-                </h2>
+  <h2 className="mt-2 text-4xl font-black text-emerald-400">
+    99.98%
+  </h2>
 
-                <div className="mt-3 h-2 rounded-full bg-white/10">
+  <div className="mt-4 h-2 w-40 rounded-full bg-white/10">
+    <div className="h-full w-[99%] rounded-full bg-emerald-400" />
+  </div>
 
-                  <div className="h-full w-[99%] rounded-full bg-green-400" />
+</div>
 
-                </div>
+{/* Connected Devices Card */}
 
-              </div>
+<div className="hidden lg:block absolute -right-10 bottom-10 rounded-3xl border border-cyan-500/20 bg-black/40 p-6 backdrop-blur-2xl shadow-[0_0_40px_rgba(0,194,255,.15)]">
 
-              {/* Connected Devices Card */}
+  <p className="text-sm text-white/70">
+    Connected Devices
+  </p>
 
-              <div className="hidden lg:block absolute -right-10 bottom-10 rounded-3xl border border-cyan-500/20 bg-black/40 p-6 backdrop-blur-2xl shadow-[0_0_40px_rgba(0,194,255,.15)]">
+  <h2 className="mt-2 text-4xl font-black text-blue-400">
+    1.2M+
+  </h2>
 
-                <p className="text-sm text-slate-900/50">
-                  Connected Devices
-                </p>
+  <p className="mt-3 text-sm font-medium text-emerald-400">
+    ● Live
+  </p>
 
-                <h2 className="mt-2 text-2xl  text-4xl
-    sm:text-5xl
-    lg:text-7xl
-    font-extrabold
-    leading-tight
-    text-slate-900 font-black text-blue-600">
-                  1.2M+
-                </h2>
-
-                <p className="mt-3 text-emerald-600">
-                  ● Live
-                </p>
-
-              </div>
-
-            </div>
-
+</div>
             {/* Live Activity */}
 
             <ActivityFeed />
